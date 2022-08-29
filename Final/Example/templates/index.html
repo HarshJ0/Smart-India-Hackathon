@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Fastag {% endblock %}</h1>
+    {% for i in Fastag %}
+        <div class='i'>
+            <p>{{ i['fastag_id'] }}</p>
+            <p>{{ i['vehicle_class'] }}</p>
+            <p>{{ i['vehicle_type'] }}</p>
+            <p>{{ i['registration_no'] }}</p>
+            <p>{{ i['fine_count'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
